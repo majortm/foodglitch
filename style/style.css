@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to left, #50c878, #1998d3);
+    height: 100vh;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:8px 2px;
+    
+}
+
+header nav .navlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin:20px;
+    
+}
+header nav .navlink .logo{
+    padding:0px 0px;
+    font-size:35px;
+    font-weight:900;
+}
+header nav .navbutton button{
+     display:none;
+     color:#1998d3;
+     background-color: white;
+     padding: 10px 20px;
+     margin:20px;
+     border:1px solid white;
+     border-radius: 10px;
+     font-size: 20px;
+} 
+
+header nav .desktop_nav{
+    display:none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 10px;
+    
+}
+header nav .desktop_nav a{
+    color: white;
+    padding: 7px 10px;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+}
+header nav .navicon button{
+ display:block;
+ color:white;
+ background-color: transparent;
+border:none;
+}
+header nav .navicon button img{
+    color:white;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* desktopview  */
+
+@media screen and (min-width:1025px) {
+    header {
+        height: 50vh;
+    }
+    header nav .desktop_nav{
+        display:flex;
+    }
+
+    header nav .navbutton button{
+        display:block;
+    }
+    header nav .navicon button{
+        display:none;
+    }
+    header nav .navicon {
+        display:none;
+    }
+}
