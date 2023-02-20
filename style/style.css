@@ -7,7 +7,7 @@
 
 header {
     background-image: linear-gradient(to left, #50c878, #1998d3);
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -15,8 +15,8 @@ header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:8px 2px;
-    
+    padding: 8px 2px;
+
 }
 
 header nav .navlink {
@@ -24,51 +24,117 @@ header nav .navlink {
     flex-direction: row;
     justify-content: space-between;
     color: white;
-    margin:20px;
-    
-}
-header nav .navlink .logo{
-    padding:0px 0px;
-    font-size:35px;
-    font-weight:900;
-}
-header nav .navbutton button{
-     display:none;
-     color:#1998d3;
-     background-color: white;
-     padding: 10px 20px;
-     margin:20px;
-     border:1px solid white;
-     border-radius: 10px;
-     font-size: 20px;
-} 
+    margin: 20px;
 
-header nav .desktop_nav{
-    display:none;
+}
+
+header nav .navlink .logo {
+    padding: 0px 0px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+header nav .navbutton button {
+    display: none;
+    color: #1998d3;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+header nav .desktop_nav {
+    display: none;
     flex-direction: row;
     justify-content: space-between;
-    padding:0px 10px;
-    
+    padding: 0px 10px;
+
 }
-header nav .desktop_nav a{
+
+header nav .desktop_nav a {
     color: white;
     padding: 7px 10px;
     font-size: 25px;
     font-weight: 900;
     text-decoration: none;
 }
-header nav .navicon button{
- display:block;
- color:white;
- background-color: transparent;
-border:none;
+
+header nav .navicon button {
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: none;
 }
-header nav .navicon button img{
-    color:white;
+
+header nav .navicon button img {
+    color: white;
     margin: 20px 0px;
 }
 
+header .headercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+header .headercontent .headerinfo h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+    padding: 30px 12px 10px 12px;
+}
+
+header .headercontent .headerinfo h4 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    padding: 0px 20px;
+}
+
+header .headercontent .headerinfo .contentbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 50px 20px;
+}
+
+header .headercontent .headerinfo .contentbutton button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 7%;
+    border:none;
+    width: auto;
+    background-color: white;
+    padding:10px;
+    margin:0px 15px 0px 0px;
+    text-align: left;
+    align-items: center;
+}
+header .headercontent .headerinfo .contentbutton button img{
+   width:30px;
+   height:30px; 
+}
+header .headercontent .headerinfo .contentbutton button h5{
+    font-size:0.82rem;
+    padding-left:5px;
+}
+header .headercontent .headerinfo .contentbutton button h5 span{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+header .headercontent .headerimg img {
+    width: 100%;
+    height: auto;
+}
+header .mylogo{
+    color:white;
+    padding:30px 20px;
+}
 
 
 
@@ -81,19 +147,42 @@ header nav .navicon button img{
 
 @media screen and (min-width:1025px) {
     header {
-        height: 50vh;
-    }
-    header nav .desktop_nav{
-        display:flex;
+        height: 85vh;
     }
 
-    header nav .navbutton button{
-        display:block;
+    header nav .desktop_nav {
+        display: flex;
     }
-    header nav .navicon button{
-        display:none;
+
+    header nav .navbutton button {
+        display: block;
     }
+
+    header nav .navicon button {
+        display: none;
+    }
+
     header nav .navicon {
-        display:none;
+        display: none;
     }
+
+    header .headercontent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .headercontent .headerinfo h1 {
+        font-size: 5rem;
+    }
+
+    header .headercontent .headerimg img {
+        height: 600px;
+    }
+
+    header .headercontent .headerinfo h4 {
+        font-size: 1.3rem;
+    }
+    
 }
