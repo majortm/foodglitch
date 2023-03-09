@@ -94,7 +94,7 @@ header .headercontent {
 }
 
 header .headercontent .headerinfo h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     font-weight: 750;
     padding: 30px 12px 10px 12px;
@@ -131,18 +131,18 @@ header .headercontent .headerinfo .contentbutton button img{
    width:30px;
    height:30px; 
 }
-header .headercontent .headerinfo .contentbutton button h5{
+header .headercontent .headerinfo .contentbutton button p{
     font-size:0.82rem;
     padding-left:5px;
 }
-header .headercontent .headerinfo .contentbutton button h5 span{
+header .headercontent .headerinfo .contentbutton button p span{
     font-size: 1rem;
     text-transform: capitalize;
 }
 
 header .headercontent .headerimg img {
     width: 100%;
-    height: 500px;
+    height: 450px;
 }
 header .mylogo{
     color:white;
@@ -181,6 +181,25 @@ main section.categories .content p{
     font-size: 1rem;
     font-weight: 400;
     line-height: 20px;
+}
+main .zig-zag{
+    display:flex;
+    justify-content: center;
+
+}
+main .zig-zag img{
+    width: 310px;
+}
+
+main .header2{
+    display:flex;
+    justify-content: center;
+    margin:70px 0px;
+}
+main .header2 .brands{
+    font-size:1.5rem;
+    font-weight: lighter;
+    color:gray;
 }
 
 
@@ -230,6 +249,17 @@ main section.categories .content p{
     main section.categories .boxx{
         width:250px;
     }
+
+
+    main .zig-zag{
+        display:flex;
+        justify-content: center;
+        
+    }
+    main .zig-zag img{
+    width: 450px;
+}
+    
 
     
 }
